@@ -1,0 +1,15 @@
+path: web/wp
+url: http://localhost
+user: admin
+color: false
+disabled_commands:
+  - db drop
+  - plugin install
+require:
+  - path-to/command.php
+core config:
+	dbuser: root
+	dbpass: root
+	extra-php: |
+		define( 'WP_DEBUG', true );
+		define( 'WP_POST_REVISIONS', 50 );
