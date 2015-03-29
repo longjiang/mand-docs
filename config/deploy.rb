@@ -6,7 +6,7 @@ set :login, 'longjiang'
 set :repo_url, "https://github.com/longjiang/mand-docs.git"
 
 # path to composer
-SSHKit.config.command_map[:composer] = "php54 /home/#{fetch(:login)}/bin/composer.phar"
+SSHKit.config.command_map[:composer] = "php54 /home/#{fetch(:login)}/composer.phar"
 
 # define which branch will be used for deployment
 set :branch, :master

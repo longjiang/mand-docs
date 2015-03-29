@@ -22,3 +22,6 @@ server 'longjiang.webfactional.com', user: fetch(:login), roles: %w{web app db}
 
 fetch(:default_env).merge!(wp_env: :production)
 
+set :wpcli_remote_url, 'http://docs.mand.jon-long.ca'
+
+set :wpcli_local_url, 'http://localhost'
